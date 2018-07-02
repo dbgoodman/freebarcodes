@@ -10,6 +10,7 @@ if __name__ == '__main__':
         name='freebarcodes',
         packages=['freebarcodes'],
         version=VERSION,
+        include_dirs=[np.get_include()],
         entry_points={
           'console_scripts': [
               'freebarcodes = freebarcodes.main:main'
